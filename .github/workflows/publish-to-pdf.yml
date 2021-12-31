@@ -1,0 +1,28 @@
+name: Markdown to pdf
+on:
+  push:
+    branches:
+      - master
+    # Paths can be used to only trigger actions when you have edited certain files, such as a file within the /docs directory
+    paths:
+      - 'recept/**.md'
+      - 'recept/assets/**'
+
+jobs:
+  converttopdf:
+    name: Build PDF
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: baileyjm02/markdown-to-pdf@v1
+        with:
+          input_dir: recept
+          output_dir: pdf
+          images_dir: recept/assets
+          image_import: ./assets
+          # Default is true, can set to false to only get PDF files
+          build_html: false
+      - uses: actions/upload-artifact@v1
+        with:
+          name: recept
+          path: pdf
