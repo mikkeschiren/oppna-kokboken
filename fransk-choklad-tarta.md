@@ -3,16 +3,16 @@
 
 
 ## Ingredienser
-200 g mörk choklad
-200 g smör
-3 ägg
-2.5 dl socker
-3 dl vetemjöl
+* 200 g mörk choklad
+* 200 g smör
+* 3 ägg
+* 2.5 dl socker
+* 3 dl vetemjöl
 
 ### Glasyr
-25 g smör
-1 dl vispgrädde
-150 g mörk choklad
+* 25 g smör
+* 1 dl vispgrädde
+* 150 g mörk choklad
 
 
 
